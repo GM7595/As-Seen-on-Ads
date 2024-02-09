@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: 303203f10ac88405ba8ad344f32c8fd8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gatePrefab: {fileID: 8586891231425788312, guid: 1c163cae77ce141cb90e5efd56325ab3, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
