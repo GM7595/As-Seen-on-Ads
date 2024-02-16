@@ -151,12 +151,18 @@ public class PlayerScript : MonoBehaviour
 
     void PlayerCollision(RaycastHit col)
     {
-
         GateScript gateScript = col.transform.GetComponentInParent<GateScript>();
         if (gateScript != null)
         {
             playerHP = Mathf.RoundToInt(gateScript.DoMath());
             gateScript.Destroy();
+        }
+
+        if (col.transform.tag == "Bullet")
+        {
+            Debug.Log("[BULLET] " + col.transform.name);
+            bulletPrefab = col.transform.GetComponentInParent<BulletModel>().bulletPrefab;
+            Destroy(col.transform.gameObject);
         }
     }
 
